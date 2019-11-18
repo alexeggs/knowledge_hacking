@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.httr-oauth
+knowledge_hacking.Rproj
+src/tools/duolingo_creds.txt
+src/tools/googlesheets_token.rds
