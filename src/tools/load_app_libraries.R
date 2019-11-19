@@ -10,7 +10,8 @@ load_app_libraries <- function() {
                         "googlesheets",
                         "remotes",
                         "shinydashboard",
-                        "rclipboard")
+                        "rclipboard",
+                        "rsconnect")
   
   ## check if packages already exist
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
@@ -33,6 +34,7 @@ load_app_libraries <- function() {
   library(googlesheets)
   library(remotes)
   library(rclipboard)
+  library(rsconnect)
   
   ## list of packages to load
   list.of.packages <- c("emitanaka/shinycustomloader")
@@ -44,5 +46,7 @@ load_app_libraries <- function() {
   if(length(new.packages)) devtools::install_github(new.packages)
   
   library(shinycustomloader)
+  
+  source("src/tools/shinyapps_creds.R")
   
 }

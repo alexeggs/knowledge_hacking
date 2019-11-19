@@ -1,0 +1,1 @@
+rsconnect::setAccountInfo(name='smartdataes', token='B09F0690F884AF61D59DE0F17DF1474C', secret='GvcLu2ltjEOnVJT/0BAiuIHHMasU6fsU6HS87aBS')
